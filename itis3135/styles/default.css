@@ -42,13 +42,17 @@ nav{
 }
 
 .centerList{
-    margin-left: 200px;
+    margin: 20px 0;
+    margin-left: 20px;
+    margin-right: 20px
 }
 
-h2, footer, p{
+h2, footer{
     text-align: center;
     
 }
+
+
 
 
 
