@@ -1,0 +1,55 @@
+body{
+    background-color:rgb(16, 87, 100);
+}
+
+p, header, h2, ul, figcaption{
+    color:beige;
+    
+}
+
+nav > a{
+    color:rgb(156, 197, 114);
+}
+
+footer > a{
+    color: rgb(156, 197, 114);
+}
+
+p > a{
+    color:rgb(249, 242, 156);
+    
+}
+
+header, figcaption{
+    text-align: center;
+    font-family: georgia;
+}
+
+figcaption{
+    font-size:xx-small;
+    font-style: italic;
+
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav{
+    text-align: center;
+}
+
+ul{
+    margin-left: 70px;
+}
+
+h2, footer, p{
+    text-align: center;
+    
+}
+
+
+
+
