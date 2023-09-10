@@ -2,7 +2,7 @@ body{
     background-color:rgb(16, 87, 100);
 }
 
-p, header, h2, ul, figcaption{
+p, header, h2, ul, figcaption, h3, ol{
     color:beige;
     
 }
@@ -47,7 +47,7 @@ nav{
     margin-right: 170px
 }
 
-h2, footer{
+h2, footer, table, h3{
     text-align: center;
     
 }
@@ -55,6 +55,58 @@ h2, footer{
 .centerStuff{
     text-align: center;
 }
+
+.centerTable{
+    margin: 20px 0;
+    margin-left: 280px;
+    margin-right: 280px   
+}
+
+div{
+    margin: 20px;
+    margin-left: 280px;
+    margin-right: 280px;
+}
+
+
+
+figure, table{
+    margin: 20px;
+    margin-left: 170px;
+    margin-right: 170px;
+    
+}
+
+table, th, td {
+    border: 0.5px solid rgb(50, 103, 108);
+    border-collapse: collapse;
+    margin: 20px 0;
+
+  }
+
+
+
+td:hover{
+    background-color: rgb(231, 239, 225);
+}
+
+th{
+    background-color: rgb(52, 134, 134);
+}
+
+tr:nth-child(odd){
+    background-color: rgb(152, 195, 196);
+    }
+
+
+tr:nth-child(even){
+    background-color: rgb(188, 217, 218);
+}
+
+
+
+
+
 
 
 
