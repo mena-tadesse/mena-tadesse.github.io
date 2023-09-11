@@ -2,7 +2,7 @@ body{
     background-color:rgb(16, 87, 100);
 }
 
-p, header, h2, ul, figcaption, h3, ol{
+p, header, h2, ul, figcaption, h3, ol, form{
     color:beige;
     
 }
@@ -70,7 +70,7 @@ div{
 
 
 
-figure, table{
+figure, table, form{
     margin: 20px;
     margin-left: 170px;
     margin-right: 170px;
@@ -82,7 +82,14 @@ table, th, td {
     border-collapse: collapse;
     margin: 20px 0;
 
-  }
+}
+
+fieldset{
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 2px solid rgb(65, 117, 114)
+    
+}
 
 
 
@@ -96,20 +103,42 @@ th{
 
 tr:nth-child(odd){
     background-color: rgb(152, 195, 196);
-    }
-
-
-tr:nth-child(even){
-    background-color: rgb(188, 217, 218);
 }
 
 
+tr:nth-child(even){
+    background-color: rgb(180, 215, 216);
+}
 
+input[type="submit"] {
+    margin: 2em auto;
+    background-color: #dbfbf7;
+    border-color: rgb(75, 114, 121);
+    min-width: 100px;
+}
 
+input[type="reset"] {
+    margin: 2em auto;
+    background-color: #dbfbf7;
+    border-color: rgb(75, 114, 121);
+    min-width: 100px;
+    
+    
+}
 
+input[type = "text"]{
+    background-color: rgb(69, 14, 95);
+    color:beige;
+    border-color:rgb(69, 14, 95);
+}
 
+input[type = "tel"]{
+    background-color: rgb(69, 14, 95);
+    color:beige;
+    border-color:rgb(69, 14, 95);
+}
 
-
-
-
-
+form{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
