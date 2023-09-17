@@ -20,6 +20,12 @@ p > a{
     
 }
 
+h3 > a{
+    color: rgb(156, 197, 114);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
 header, figcaption{
     text-align: center;
     font-family: georgia;
@@ -141,4 +147,10 @@ input[type = "tel"]{
 form{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: small;
+}
+
+section{
+    margin-left: 150px;
+    margin-right: 100px;
+    width: 60%;
 }
