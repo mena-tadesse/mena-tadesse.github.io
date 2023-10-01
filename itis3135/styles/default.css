@@ -1,6 +1,7 @@
 body{
     background-color:rgb(16, 87, 100);
     text-align: left;
+    background-image: url("background.jpg");
 }
 
 p, header, h2, ul, figcaption, h3, ol, form{
