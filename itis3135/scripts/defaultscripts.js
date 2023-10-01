@@ -13,4 +13,4 @@ function dateTime(){
 
 //Today is 3:53pm on Wednesday, 3 November, 2027
 
-var onToday = dateTime();
+var onclick = dateTime();
