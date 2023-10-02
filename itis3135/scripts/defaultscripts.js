@@ -3,7 +3,7 @@ function scriptTest(){
     console.log("Hello World");
 }
 
-var onclick = scriptTest();
+//var onclick = scriptTest();
 
 function dateTime(){
     var today = new Date();
