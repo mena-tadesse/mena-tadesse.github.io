@@ -11,14 +11,43 @@
         <div data-include="components/header.html"></div>
         <main>
             <h2> Mena Tadesse : Majestic Turtle : ITIS 3135 : First Script</h2>
+            <h3>
             <script>
-                <h3>
+                
                     var date = new Date();
-                    var time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
-                    document.write("Today is " + dateTime.toTimeString() + " on " + time);
+                    var time = (date.getHours() % 12) + ":" + date.getMinutes();
                     
-                </h3>
+                    document.write("Today is " + time + " on " + date.toDateString());
             </script>
+            </h3> 
+            <fieldset>
+            <form id="forms">   
+                <label for = "firstName">First Name: </label>
+                <input type = "text" id = "firstName">
+                <br>
+                <br>
+                <label for = "lastName">Last Name: </label>
+                <input type = "text" id = "lastName">
+                <br>
+                <br>
+                <label for = "moody">Mood: </label>
+                <input type = "text" id = "moody">
+                <br>
+                <br>
+                <button onClick="welcome()">Submit</button>
+            </form>
+        </fieldset>
+
+        <h3>
+            <script>
+                function welcome(){
+                    var fname = document.getElementById("firstName");
+                    var lname = document.getElementById("lastName");
+                    var mood = document.getElementById("moody");
+                    alert("Tadesse Designs welcomes you " + fname + " " + lname + " ! We are glad you are doing " + mood + "!");
+                }
+            </script>
+        </h3>
             
         </main>
         <div data-include="components/footer.html"></div>
