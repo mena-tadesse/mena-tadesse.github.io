@@ -3,7 +3,7 @@ function scriptTest(){
     console.log("Hello World");
 }
 
-var onclick = scriptTest();
+
 
 
 
