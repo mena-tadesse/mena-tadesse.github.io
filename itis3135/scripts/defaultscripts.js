@@ -7,7 +7,7 @@ function scriptTest(){
 
 function dateTime(){
     var today = new Date();
-    print("Today's date is: " + document.toDateString());
+    alert("Today's date is: " + document.toDateString());
 
 }
 
