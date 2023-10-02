@@ -15,8 +15,7 @@
             <script>
                 
                     var date = new Date();
-                    var time = (date.getHours() % 12) + ":" + date.getMinutes();
-                    
+                    var time = date.getHours() + ":" + date.getMinutes();
                     document.write("Today is " + time + " on " + date.toDateString());
             </script>
             </h3> 
@@ -41,7 +40,7 @@
         <label for="numbers">Enter a number between 1 and 10: </label>
         <input type="number" id="numbers">
         <br>
-        <input type="submit" value="Submit" onclick="polygon()">
+        <input type="submit">
         </form>
         </fieldset>
             
