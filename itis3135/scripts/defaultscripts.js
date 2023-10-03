@@ -36,7 +36,7 @@ function polygon(){
     if(document.getElementById("numbers").value == 10 || document.getElementById("numbers").value == -10){
         alert("A polygon with ten sides is a decagon.");
     }
-    if(document.getElementById("numbers").value >= 10 || document.getElementById("numbers").value <= -10){
+    if(document.getElementById("numbers").value > 10 || document.getElementById("numbers").value < -10){
         alert("Please give a number between 1 and 10.");
     }
 }
