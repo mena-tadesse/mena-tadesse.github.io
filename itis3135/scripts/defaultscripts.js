@@ -46,9 +46,9 @@ function turtles(){
 }
 
 function sum(){
-    var num1 = promt("Enter a number");
+    var num1 = prompt("Enter a number");
     num1 = parseInt(num1);
-    var num2 = promt("Enter another number");
+    var num2 = prompt("Enter another number");
     num2 = parseInt(num2);
     var num3 = num2 + num1;
     alert("The sum comes to " + num3);
@@ -59,11 +59,11 @@ function nice(){
 }
 
 function dummy(){
-    var q1 = promt("What is 2 + 3?");
+    var q1 = prompt("What is 2 + 3?");
     q1 = parseInt(q1);
-    var q2 = promt("How many sides does a triagle have?");
+    var q2 = prompt("How many sides does a triagle have?");
     q2 = parseInt(q2);
-    var q3 = promt("Are you smart? Enter 1 for yes and 2 for no.");
+    var q3 = prompt("Are you smart? Enter 1 for yes and 2 for no.");
     q3 = parseInt(q3);
     alert("You are smart");
 }

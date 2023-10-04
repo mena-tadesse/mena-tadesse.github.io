@@ -2,6 +2,7 @@ body{
     background-color:rgb(16, 87, 100);
     text-align: left;
     background-image: url("background.jpg");
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 p, header, h2, ul, figcaption, h3, ol, form{
@@ -30,7 +31,7 @@ h3 > a{
 
 header, figcaption{
     text-align: center;
-    font-family: georgia;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 figcaption{
