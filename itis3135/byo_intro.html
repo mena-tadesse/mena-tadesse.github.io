@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/default.css">
+    <title>BYO Intro</title>
+</head>
+<body>
+<div data-include="components/header.html"></div>
+<main>
+<h2>BYO Intro</h2>
+<h3>Time to build your own intro page! Please fill out the form below so you can create your own page!</h3>
+<form>
+    <label>Full Name:</label>
+    <input type="text" value="Mena Tadesse" required>
+    <br>
+    <label>Mascot: </label>
+    <input type="text" value="Majestic Turtle" required>
+    <br>
+    <label>Image: </label>
+    <input type="file" required>
+    <br>
+    <label>Image Caption: </label>
+    <input type="text" value="At a botanical garden" required>
+    <br>
+    <label>Personal Background: </label>
+    <input type="text" value="I’m originally from Atlanta, but moved to Charlotte when I was young. I am the eldest child" required>
+    <br>
+    <label>Professional Background: </label>
+    <input type="text" value="I have some experience in the restaurant industry." required>
+    <br>
+    <label>Academic Background: </label>
+    <input type="text" value="I’m currently pursuing a bachelors degree in computer science." required>
+    <br>
+    <label>Background in this subject: </label>
+    <input type="text" value="I’m new to this subject." required>
+    <br>
+    <label>Primary Computer Platform: </label>
+    <input type="text" value="Windows." required>
+    <br>
+    <fieldset id="courseList">
+    <label>Courses I'm taking and why: </label>
+    <label>Course Title: </label>
+    <input type="text" value="ITIS 3135" required>
+    <label>Course Description: </label>
+    <input type="text" value="Web dev" required>
+    <br>
+    <label>Add Course?</label>
+    <input type="button" value="course" onClick="addCourse()">
+    <!--add delete button option after each course-->
+    </fieldset>
+    <label>Funny/interesting thing: </label>
+    <input type="text" value="I like baking." required>
+    <br>
+    <label>I'd also like to share: </label>
+    <input type="text" value="I grew up in Charlotte." required>
+    <br>
+    <input type="checkbox" id="consent" required>
+    <label for="consent"> "I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available."</label>
+    <br>
+    <input type="submit" value="Submit">
+    <br>
+    <input type="reset" value="Reset" onClick="submit">
+
+
+</form>
+</main>
+<div data-include="components/footer.html"></div> 
+<script src="scripts/HTMLInclude.min.js"></script> 
+<script src="scripts/survey.js"></script> 
+</body>
+</html>
