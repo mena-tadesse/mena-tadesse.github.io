@@ -157,3 +157,23 @@ section{
     margin-right: 100px;
     
 }
+
+@media ( min-width: 576px){
+    body{
+    margin: 20px;
+    min-width: 100px;
+    }
+
+    .consents{
+        min-width: 50px;
+    }
+
+    img{
+        width: 100px;
+        height: 150px;
+    }
+
+    footer, header{
+        margin: 10px;
+    }
+}
