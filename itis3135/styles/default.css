@@ -121,7 +121,7 @@ tr:nth-child(even){
 
 input[type="submit"] {
     margin: 2em auto;
-    background-color: #dbfbf7;
+    background-color: hsl(173, 80%, 92%);
     border-color: rgb(75, 114, 121);
     min-width: 100px;
 }
@@ -175,4 +175,22 @@ section{
     footer, header{
         margin: 10px;
     }
+}
+
+
+.calculator1{
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+    margin-left: 40%;
+    background-color: rgb(156, 197, 114);
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.buttons{
+    margin: 2px;
+    max-width: 90px;
+    border-radius: 4px;
+    border-style: hidden;
+
 }
