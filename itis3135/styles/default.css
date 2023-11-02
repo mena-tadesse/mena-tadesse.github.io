@@ -1,18 +1,59 @@
 body{
-    background-color:rgb(16, 87, 100);
+    background-color:rgb(234, 231, 220, 100);
     text-align: left;
     background-image: url("background.jpg");
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-p, header, h2, ul, figcaption, h3, ol, form{
-    color:beige;
-    
+.indexMain{
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-nav > a{
-    color:rgb(156, 197, 114);
+.menu, .menu > a{
+    background-color: rgb(156, 197, 114);
+    color: beige;
+    text-decoration: none;
+    word-spacing: 5px;
+    border-radius: 5px;
 }
+
+.menu, .footer{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.menu > a:hover{
+    background-color: #e2b41b;
+
+}
+
+.footer, .footer > a , .footer > p{
+    background-color: rgb(156, 197, 114);
+    color: beige;
+    word-spacing: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.footer > a:hover{
+    background-color: #e2b41b
+}
+
+.footer > p > a:hover {
+    background-color:rgb(50, 103, 108);
+    border-radius: 3px;
+}
+
+.footer > p > a{
+    text-decoration: none;
+}
+
+p, header, h2, ul, figcaption, h3, ol, form{
+    color: #d1a410;
+}
+
+
 
 footer > a{
     color: rgb(156, 197, 114);
@@ -71,7 +112,7 @@ h2, footer, table, h3{
     margin-right: 280px   
 }
 
-div{
+.tables{
     margin: 20px;
     margin-left: 280px;
     margin-right: 280px;
@@ -182,7 +223,7 @@ section{
     display: inline-grid;
     grid-template-columns: auto auto auto auto;
     margin-left: 40%;
-    background-color: rgb(156, 197, 114);
+    background-color: rgb(198, 136, 189);
     border-radius: 30px;
     padding: 10px;
 }
@@ -193,4 +234,30 @@ section{
     border-radius: 4px;
     border-style: hidden;
 
+}
+
+.proj1{
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#wireframe{
+    width: 350px;
+    border-radius: 10px;
+}
+
+#sitemap{
+    width: 350px;
+    border-radius: 10px;
+}
+
+.figproj1{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.divproj1{
+    margin-left: 270px;
+    margin-right: auto;
 }
