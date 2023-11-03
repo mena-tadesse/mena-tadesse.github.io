@@ -261,3 +261,12 @@ section{
     margin-left: 270px;
     margin-right: auto;
 }
+
+.emmet{
+    margin: auto;
+    max-width: 300px;
+}
+
+.emmet > p{
+    text-align: center;
+}
