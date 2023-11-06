@@ -117,3 +117,9 @@ body{
         font-size: 10px;
     }
 }
+
+.aboutUs{
+    background: url(images/nails.jpg);
+    width: 70%;
+    height: 300px;
+}
