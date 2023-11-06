@@ -13,6 +13,11 @@
     text-decoration: none;
     padding-right: 30px;
     text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    
+
 }
 #logo{
     width: 50px;
@@ -21,7 +26,6 @@
 .slogan{
     width: 100%;
     margin: 0;
-    background-color: aqua;
     position: relative;
 }
 
@@ -72,17 +76,44 @@ body{
     width: 50%;
     height: 100px;
     margin: 0;
-    border: 0.3px solid rgb(45, 120, 166);
+    border: 0.3px solid rgb(50, 132, 183);
     border-bottom: none;
     border-top: none;
     border-left: none;
 }
 
+#footer1 > p{
+    margin-left: 40px;
+    color: rgb(167, 213, 239);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+}
+
 #footer2{
     width: 50%;
     margin: 0;
-    border: 0.3px solid rgb(45, 120, 166);
     border-bottom: none;
     border-top: none;
     border-right: none;
+}
+
+#footer2{
+    margin-left: 40px;
+    color: rgb(167, 213, 239);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+}
+
+@media ( max-width: 576px){
+    #slogan1{
+        font-size: 20px;
+    }
+
+    #slogan2{
+        font-size: 10px;
+    }
+
+    #footer1 > p, #footer2 > p{
+        font-size: 10px;
+    }
 }
