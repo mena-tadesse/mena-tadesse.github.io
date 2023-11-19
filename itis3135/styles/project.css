@@ -216,7 +216,7 @@ body{
 
 .appointments{
     position: absolute;
-    top: 90%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 500px;
@@ -254,13 +254,7 @@ button{
     background-color:rgb(216, 241, 255)
 }
 
-#appointmentSection{
-    visibility: visible;
-}
 
-.closeAppointmentection{
-    visibility: hidden;
-}
 
 #popup{
     visibility: hidden;
