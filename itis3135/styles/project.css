@@ -216,7 +216,7 @@ body{
 
 .appointments{
     position: absolute;
-    top: 85%;
+    top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 500px;
@@ -264,6 +264,10 @@ button{
     width: 300px;
     height: 300px;
     background-color:rgb(228, 229, 229);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 
 }
 
@@ -271,4 +275,5 @@ button{
     visibility: visible;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
 }
