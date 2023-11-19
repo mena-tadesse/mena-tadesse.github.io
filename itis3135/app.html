@@ -43,7 +43,7 @@
                     <label class="forms">Additional Information: <input type="text" placeholder="Comments, questions, concerns..."></label>
                     <button type="submit" onClick="popUp()">Submit</button>
                 </form>
-                <div id="popup" class="open-popup">
+                <div id="popup">
                     <p id="thanks">Thank you!</p>
                     <p>We have recorded your appointment to our schedule.</p>
                     <p>We will reach out if there is any other information needed.</p>
@@ -52,10 +52,10 @@
 
                 <script>
                     let popup = document.getElementById("popup");
-                    let appointmentArea = document.getElementById("appointmentSection");
+                    /*let appointmentArea = document.getElementById("appointmentSection"); */
                     function popUp(){
                     popup.classList.add("open-popup");
-                    appointmentArea.add("closeAppointmentSection");
+                    /*appointmentArea.add("closeAppointmentSection"); */
                     }
                 </script>
             </section>
