@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Appointments</title>
     <link rel="stylesheet" href="styles/project.css">
+
 </head>
 <body>
     <main>
@@ -15,9 +16,9 @@
             <a href="app.html">Appointments</a>
             <a href="review.html">Reviews</a>
         </nav>
-        <div>
+        <div >
             <img id="appbackground" src="images/appbackground.jpg">
-            <section class="appointments">
+            <section class="appointments" id="appointmentSection">
                 <h1 class="headings">Make An Appointment</h1>
                 <form>
                     <label class="forms">First Name: <input class="text" type="text" placeholder="Ex: John" required></label>
@@ -40,8 +41,21 @@
                     <label class="forms">Date: <input type="date" required></label>
                     <label class="forms">Time" <input type="time" required></label>
                     <label class="forms">Additional Information: <input type="text" placeholder="Comments, questions, concerns..."></label>
-                    <button>Submit</button>
+                    <button type="submit" onClick="popUp()">Submit</button>
                 </form>
+                <div id="popup" class="open-popup">
+                    <p id="thanks">Thank you!</p>
+                    <p>We have recorded your appointment to our schedule.</p>
+                    <p>We will reach out if there is any other information needed.</p>
+                    <p>See you soon!</p>
+                </div>
+
+                <script>
+                    let popup = document.getElementById("popup");
+                    function popUp(){
+                    popup.classList.add("open-popup");
+                    }
+                </script>
             </section>
         </div>
         <div class="homeFooter">
@@ -55,6 +69,7 @@
                 <p>1234 Fake St Charlotte, NC 28105</p>
             </div>
     </div>
+    
     </main>
     
 </body>
