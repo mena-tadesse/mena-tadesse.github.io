@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mena's Midterm</title>
+</head>
+<body>
+
+    <!--CSS-->
+    <style>
+        body{
+            background-color: rgb(249, 247, 236);
+        }
+        header{
+            margin-bottom: 40px;
+            min-width: 300px;
+        }
+        h1{
+            font-family:'Courier New', Courier, monospace;
+            color:rgb(225, 94, 114);
+            font-weight: lighter;
+            font-size: 60px;
+            text-align: center;
+            min-width: 650px;
+        }
+        h2{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color:rgb(202, 51, 73);
+            font-weight: lighter;
+            text-align: center;
+            
+        }
+        p{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color:rgb(169, 0, 25);
+
+        }
+        nav{
+            background-color:rgb(225, 94, 114);
+            padding: 10px;
+            border-radius: 60px;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            color:rgb(249, 247, 236);
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding: 11px;
+            border-radius: 30px;
+
+        }
+        a:hover{
+            color:rgb(202, 51, 73);
+            background-color:rgb(249, 247, 236);
+        }
+        footer>p>a{
+            color: rgb(57, 175, 116);
+            font-weight:bolder;
+            font-size:larger;
+        }
+        section{
+            max-width: 600px;
+            margin: auto;
+        }
+        footer{
+            text-align: center;
+            margin-top: 50px;
+        }
+        figcaption{
+            color:rgb(225, 94, 114);
+            font-size:smaller;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+        }
+        figure{
+            display: inline-block;
+            align-items: center;
+            text-align: center;
+        }
+        img{
+            width: 200px;
+            margin: auto;
+            border-radius: 20px;
+            border: 3px solid rgb(225, 94, 114);
+        }
+        #bunny{
+            background-color:white;
+        }
+        #home, #aboutme, #besttimes, #striking, #future{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        visibility: hidden;
+        }
+        .showThePage{
+            visibility: visible;
+        }
+    </style>
+
+    <!--Javascript-->
+    <script>
+        function showHome(){
+            const list = document.getElementById("home").classList;
+            list.add("showThePage");
+        }
+        function showAboutMe(){
+            classList.add("showThePage");
+        }
+        function showBestTimes(){
+            classList.add("showThePage");
+        }
+        function showStriking(){
+            classList.add("showThePage");
+        }
+        function showFuture(){
+            classList.add("showThePage");
+        }
+    </script>
+
+<main>
+    <!--Header-->
+    <header>
+        <h1>&#10047; My Art Hobby &#10047;</h1>
+    <nav>
+        <a href="#home" onClick="showHome()">Home</a>
+        <a href="#aboutme">About Me</a>
+        <a href="#besttimes">Best Times</a>
+        <a href="#striking">Striking Art</a>
+        <a href="#future">Future</a>
+    </nav>
+    </header>
+    
+    <!--Home-->
+    <section id="home" class="choose close">
+        <figure>
+        <img src="images/me.jpg" alt="Mint Museum">
+            <figcaption>At the Mint Museum</figcaption>
+        </figure>
+        <figure>
+            <img src="images/lion.jpg" alt="Lion Art">
+            <figcaption>My Art</figcaption>
+        </figure>
+        <p>
+            Welcome to my hobby website! 
+            This site provides a glimpse into who I am, offering a brief explanation of why I like art and 
+            showcasing some of my favorite pieces. As you navigate through the pages, you'll find details 
+            about my artistic journey, though I'll spare you the intricacies. There's also a section where 
+            I discuss a few art pieces that I like, and I touch upon some of my best moments in this creative 
+            pursuit.
+        </p>
+        
+    </section>
+
+    <!--About Me-->
+    <section id="aboutme" class="choose close">
+        <h2>About Me</h2>
+        <figure>
+        <img src="images/uncc.jpg" alt="uncc" id="uncc">
+        <figcaption>A picture of uncc</figcaption>
+        </figure>
+        <figure>
+            <img src="images/lady.jpg" alt="Street Art" id="streetArt">
+            <figcaption>Street art</figcaption>
+        </figure>
+        <p>
+            Ever since I was young, I took interest in art. I would enjoy drawing pricesses on paper and 
+            hanging them up in my bedroom, creating funky pink bracelets with my sister, and finger painting
+            clay mugs and bowls. I have so many fond memories with this activity, and will continue to make some
+            more.</p>
+        <p>
+            Lately, I've been trying to paint in watercolor and am looking into learning how to knit. I mean, 
+            wouldn't it be so cool to make your own origional clothes?! Besides making art, I also love
+            watching it. I spend some of my free time going to different museums and exploring new exhibits.
+        </p>
+    </section>
+
+    <!--Best Times-->
+    <section id="besttimes" class="choose close">
+        <h2>Best Times</h2>
+        <figure>
+        <img src="images/classdresses.jpg" alt="Class Dresses">
+        <figcaption>Our class dresses</figcaption>
+        </figure>
+        <figure>
+            <img src="images/teamdress.jpg" alt="Team Dress">
+            <figcaption>My team's dress</figcaption>
+            </figure>
+        <p>
+            One of my favorite artwork is one that I completed during high school. My art class entered a 
+            competition called Recycle the Runway. The only rule for the competition is to create three pieces
+            made out of recycleable materials. My class was split up into three groups, with each team having
+            different themes. My team decided to create a dress called Nature. We were so happy that we won 
+            second place!
+        </p>
+        <p>
+            From what I can remember, the leaves were made out of soda cans. The chained mini skirt was created
+            by folding soda lids while the long skirt was cardboard paper. My teammates were extremely creative,
+            and came up with the idea of melting plastic to form flowers and stick on the body of the skirt.
+        </p>
+    </section>
+
+    <!--Imaginative-->
+    <section id="striking" class="choose close">
+        <h2>Striking Art</h2>
+        <figure>
+        <img src="images/meAtDuke.jpg" alt="Duke Museum">
+        <figcaption>At the Duke Museum</figcaption>
+        </figure>
+        <figure>
+            <img src="images/mintmuseum.jpg" alt="Mint Museum">
+            <figcaption>At the Mint Museum</figcaption>
+            </figure>
+        <p>Something I really enjoy to pass time is going to museums! I love looking at other artists' work
+           and seeing how magical they are! I have been to most museums in Charlotte, and have traveled outside
+           of the state to see some as well. One day I hope to the Louvre Museum in France, as well as the 
+           Van Gogh Museum in the Netherlands.
+        </p>
+        
+    </section>
+
+    <!--Future Plans-->
+    <section id="future" class="choose close">
+        <h2>My Future Plans</h2>
+        <figure>
+            <img src="images/insect.jpg" alt="Watercolor insect">
+            <figcaption>Watercolor inspiration</figcaption>
+        </figure>
+        <figure>
+            <img src="images/bunny.png" alt="Bunny picture" id="bunny">
+            <figcaption>IDK, I thought this was cute</figcaption>
+        </figure>
+        <p>
+            I haven't had much time to pursue this hobby lately, and this is something I'm trying to change. 
+            One of the art mediums I'm interested in getting better at is watercolor, since I've never been able to paint with 
+            watercolor and the final product not looking like a hot mess. Another medium I'm looking to get into is 
+            knitting. I would love to knit my own sweaters and blankets. Plus when someone asks where I got it from 
+            I can say it's an origional by ANEM (my name spelled backwards). 
+        </p>
+        <p></p>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <p>Page Built By <a href="tadessedesigns.com">Tadesse Designs</a> &copy; 2023</p>
+
+        <a href="https://validator.w3.org/check?uri=referer">
+        <img style="border:0;width:88px;height:31px" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML!">
+        </a>
+
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+        </a>
+    </footer>
+
+
+</main>
+    
+</body>
+</html>
