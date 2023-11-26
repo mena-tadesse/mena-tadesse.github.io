@@ -1,5 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--CSS-->
+<style>
+    body{
+        background-color: rgb(249, 247, 236);
+    }
+    header{
+        margin-bottom: 40px;
+        min-width: 300px;
+    }
+    h1{
+        font-family:'Courier New', Courier, monospace;
+        color:rgb(225, 94, 114);
+        font-weight: lighter;
+        font-size: 60px;
+        text-align: center;
+        min-width: 650px;
+    }
+    h2{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color:rgb(202, 51, 73);
+        font-weight: lighter;
+        text-align: center;
+        
+    }
+    p{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color:rgb(169, 0, 25);
+
+    }
+    nav{
+        background-color:rgb(225, 94, 114);
+        padding: 10px;
+        border-radius: 60px;
+        text-align: center;
+    }
+    a{
+        text-decoration: none;
+        color:rgb(249, 247, 236);
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 11px;
+        border-radius: 30px;
+
+    }
+    a:hover{
+        color:rgb(202, 51, 73);
+        background-color:rgb(249, 247, 236);
+    }
+    footer>p>a{
+        color: rgb(57, 175, 116);
+        font-weight:bolder;
+        font-size:larger;
+    }
+    section{
+        max-width: 600px;
+        margin: auto;
+    }
+    footer{
+        text-align: center;
+        margin-top: 50px;
+    }
+    figcaption{
+        color:rgb(225, 94, 114);
+        font-size:smaller;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+    }
+    figure{
+        display: inline-block;
+        align-items: center;
+        text-align: center;
+    }
+    img{
+        width: 200px;
+        margin: auto;
+        border-radius: 20px;
+        border: 3px solid rgb(225, 94, 114);
+    }
+    #bunny{
+        background-color:white;
+    }
+    /*#home, #aboutme, #besttimes, #striking, #future{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+    }*/
+    .choose{
+        display: none;
+        
+    }
+
+    a:active{
+        background-color:rgb(137, 186, 162);
+        border: none;
+        color: whitesmoke
+    }
+</style>
+
+<!--Javascript-->
+<script>
+    function showHome(){
+        //const list = document.getElementById("home").classList;
+        //list.add("showThePage");
+        document.getElementById("home").style.display = "block";
+        document.getElementById("aboutme").style.display = "none";
+        document.getElementById("besttimes").style.display = "none";
+        document.getElementById("striking").style.display = "none";
+        document.getElementById("future").style.display = "none";
+
+    }
+    function showAboutMe(){
+        //classList.add("showThePage");
+        document.getElementById("home").style.display = "none";
+        document.getElementById("aboutme").style.display = "block";
+        document.getElementById("besttimes").style.display = "none";
+        document.getElementById("striking").style.display = "none";
+        document.getElementById("future").style.display = "none";
+    }
+    function showBestTimes(){
+        //classList.add("showThePage");
+        document.getElementById("home").style.display = "none";
+        document.getElementById("aboutme").style.display = "none";
+        document.getElementById("besttimes").style.display = "block";
+        document.getElementById("striking").style.display = "none";
+        document.getElementById("future").style.display = "none";
+    }
+    function showStriking(){
+        //classList.add("showThePage");
+        document.getElementById("home").style.display = "none";
+        document.getElementById("aboutme").style.display = "none";
+        document.getElementById("besttimes").style.display = "none";
+        document.getElementById("striking").style.display = "block";
+        document.getElementById("future").style.display = "none";
+    }
+    function showFuture(){
+        //classList.add("showThePage");
+        document.getElementById("home").style.display = "none";
+        document.getElementById("aboutme").style.display = "none";
+        document.getElementById("besttimes").style.display = "none";
+        document.getElementById("striking").style.display = "none";
+        document.getElementById("future").style.display = "block";
+    }
+</script>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,151 +152,7 @@
 </head>
 <body>
 
-    <!--CSS-->
-    <style>
-        body{
-            background-color: rgb(249, 247, 236);
-        }
-        header{
-            margin-bottom: 40px;
-            min-width: 300px;
-        }
-        h1{
-            font-family:'Courier New', Courier, monospace;
-            color:rgb(225, 94, 114);
-            font-weight: lighter;
-            font-size: 60px;
-            text-align: center;
-            min-width: 650px;
-        }
-        h2{
-            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            color:rgb(202, 51, 73);
-            font-weight: lighter;
-            text-align: center;
-            
-        }
-        p{
-            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            color:rgb(169, 0, 25);
-
-        }
-        nav{
-            background-color:rgb(225, 94, 114);
-            padding: 10px;
-            border-radius: 60px;
-            text-align: center;
-        }
-        a{
-            text-decoration: none;
-            color:rgb(249, 247, 236);
-            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            padding: 11px;
-            border-radius: 30px;
-
-        }
-        a:hover{
-            color:rgb(202, 51, 73);
-            background-color:rgb(249, 247, 236);
-        }
-        footer>p>a{
-            color: rgb(57, 175, 116);
-            font-weight:bolder;
-            font-size:larger;
-        }
-        section{
-            max-width: 600px;
-            margin: auto;
-        }
-        footer{
-            text-align: center;
-            margin-top: 50px;
-        }
-        figcaption{
-            color:rgb(225, 94, 114);
-            font-size:smaller;
-            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            text-align: center;
-        }
-        figure{
-            display: inline-block;
-            align-items: center;
-            text-align: center;
-        }
-        img{
-            width: 200px;
-            margin: auto;
-            border-radius: 20px;
-            border: 3px solid rgb(225, 94, 114);
-        }
-        #bunny{
-            background-color:white;
-        }
-        /*#home, #aboutme, #besttimes, #striking, #future{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            display: none;
-        }*/
-        .choose{
-            display: none;
-            
-        }
-
-        a:active{
-            background-color:rgb(137, 186, 162);
-            border: none;
-            color: whitesmoke
-        }
-    </style>
-
-    <!--Javascript-->
-    <script>
-        function showHome(){
-            //const list = document.getElementById("home").classList;
-            //list.add("showThePage");
-            document.getElementById("home").style.display = "block";
-            document.getElementById("aboutme").style.display = "none";
-            document.getElementById("besttimes").style.display = "none";
-            document.getElementById("striking").style.display = "none";
-            document.getElementById("future").style.display = "none";
-
-        }
-        function showAboutMe(){
-            //classList.add("showThePage");
-            document.getElementById("home").style.display = "none";
-            document.getElementById("aboutme").style.display = "block";
-            document.getElementById("besttimes").style.display = "none";
-            document.getElementById("striking").style.display = "none";
-            document.getElementById("future").style.display = "none";
-        }
-        function showBestTimes(){
-            //classList.add("showThePage");
-            document.getElementById("home").style.display = "none";
-            document.getElementById("aboutme").style.display = "none";
-            document.getElementById("besttimes").style.display = "block";
-            document.getElementById("striking").style.display = "none";
-            document.getElementById("future").style.display = "none";
-        }
-        function showStriking(){
-            //classList.add("showThePage");
-            document.getElementById("home").style.display = "none";
-            document.getElementById("aboutme").style.display = "none";
-            document.getElementById("besttimes").style.display = "none";
-            document.getElementById("striking").style.display = "block";
-            document.getElementById("future").style.display = "none";
-        }
-        function showFuture(){
-            //classList.add("showThePage");
-            document.getElementById("home").style.display = "none";
-            document.getElementById("aboutme").style.display = "none";
-            document.getElementById("besttimes").style.display = "none";
-            document.getElementById("striking").style.display = "none";
-            document.getElementById("future").style.display = "block";
-        }
-    </script>
-
+    
 <main>
     <!--Header-->
     <header>
@@ -187,7 +188,7 @@
     </section>
 
     <!--About Me-->
-    <section id="aboutme" class="choose close">
+    <section id="aboutme" class="choose">
         <h2>About Me</h2>
         <figure>
         <img src="images/uncc.jpg" alt="uncc" id="uncc">
@@ -210,7 +211,7 @@
     </section>
 
     <!--Best Times-->
-    <section id="besttimes" class="choose close">
+    <section id="besttimes" class="choose">
         <h2>Best Times</h2>
         <figure>
         <img src="images/classdresses.jpg" alt="Class Dresses">
@@ -235,7 +236,7 @@
     </section>
 
     <!--Imaginative-->
-    <section id="striking" class="choose close">
+    <section id="striking" class="choose">
         <h2>Striking Art</h2>
         <figure>
         <img src="images/meAtDuke.jpg" alt="Duke Museum">
@@ -254,7 +255,7 @@
     </section>
 
     <!--Future Plans-->
-    <section id="future" class="choose close">
+    <section id="future" class="choose">
         <h2>My Future Plans</h2>
         <figure>
             <img src="images/insect.jpg" alt="Watercolor insect">
