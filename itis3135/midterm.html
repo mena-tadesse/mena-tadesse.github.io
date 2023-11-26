@@ -87,35 +87,68 @@
         #bunny{
             background-color:white;
         }
-        #home, #aboutme, #besttimes, #striking, #future{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        visibility: hidden;
+        /*#home, #aboutme, #besttimes, #striking, #future{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+        }*/
+        .choose{
+            display: none;
+            
         }
-        .showThePage{
-            visibility: visible;
+
+        a:active{
+            background-color:rgb(137, 186, 162);
+            border: none;
+            color: whitesmoke
         }
     </style>
 
     <!--Javascript-->
     <script>
         function showHome(){
-            const list = document.getElementById("home").classList;
-            list.add("showThePage");
+            //const list = document.getElementById("home").classList;
+            //list.add("showThePage");
+            document.getElementById("home").style.display = "block";
+            document.getElementById("aboutme").style.display = "none";
+            document.getElementById("besttimes").style.display = "none";
+            document.getElementById("striking").style.display = "none";
+            document.getElementById("future").style.display = "none";
+
         }
         function showAboutMe(){
-            classList.add("showThePage");
+            //classList.add("showThePage");
+            document.getElementById("home").style.display = "none";
+            document.getElementById("aboutme").style.display = "block";
+            document.getElementById("besttimes").style.display = "none";
+            document.getElementById("striking").style.display = "none";
+            document.getElementById("future").style.display = "none";
         }
         function showBestTimes(){
-            classList.add("showThePage");
+            //classList.add("showThePage");
+            document.getElementById("home").style.display = "none";
+            document.getElementById("aboutme").style.display = "none";
+            document.getElementById("besttimes").style.display = "block";
+            document.getElementById("striking").style.display = "none";
+            document.getElementById("future").style.display = "none";
         }
         function showStriking(){
-            classList.add("showThePage");
+            //classList.add("showThePage");
+            document.getElementById("home").style.display = "none";
+            document.getElementById("aboutme").style.display = "none";
+            document.getElementById("besttimes").style.display = "none";
+            document.getElementById("striking").style.display = "block";
+            document.getElementById("future").style.display = "none";
         }
         function showFuture(){
-            classList.add("showThePage");
+            //classList.add("showThePage");
+            document.getElementById("home").style.display = "none";
+            document.getElementById("aboutme").style.display = "none";
+            document.getElementById("besttimes").style.display = "none";
+            document.getElementById("striking").style.display = "none";
+            document.getElementById("future").style.display = "block";
         }
     </script>
 
@@ -125,15 +158,15 @@
         <h1>&#10047; My Art Hobby &#10047;</h1>
     <nav>
         <a href="#home" onClick="showHome()">Home</a>
-        <a href="#aboutme">About Me</a>
-        <a href="#besttimes">Best Times</a>
-        <a href="#striking">Striking Art</a>
-        <a href="#future">Future</a>
+        <a href="#aboutme" onClick="showAboutMe()">About Me</a>
+        <a href="#besttimes" onClick="showBestTimes()">Best Times</a>
+        <a href="#striking" onClick="showStriking()">Striking Art</a>
+        <a href="#future" onClick="showFuture()">Future</a>
     </nav>
     </header>
     
     <!--Home-->
-    <section id="home" class="choose close">
+    <section id="home" class="choose">
         <figure>
         <img src="images/me.jpg" alt="Mint Museum">
             <figcaption>At the Mint Museum</figcaption>
@@ -235,7 +268,7 @@
             I haven't had much time to pursue this hobby lately, and this is something I'm trying to change. 
             One of the art mediums I'm interested in getting better at is watercolor, since I've never been able to paint with 
             watercolor and the final product not looking like a hot mess. Another medium I'm looking to get into is 
-            knitting. I would love to knit my own sweaters and blankets. Plus when someone asks where I got it from 
+            knitting. I would love to knit my own sweaters and blankets. Plus when someone asks where I got my clothes from 
             I can say it's an origional by ANEM (my name spelled backwards). 
         </p>
         <p></p>
