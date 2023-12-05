@@ -12,6 +12,7 @@ let add = '+';
 let subtract = '-';
 let multiply = '*';
 let divide = '/';
+let decimal = '.';
 
 function show(insert) {
     if(insert == zero){
@@ -44,19 +45,19 @@ function show(insert) {
     else if(insert == nine){
         document.getElementById("output").value += nine;
     }
-    else if(insert == "+"){
+    else if(insert == add){
         document.getElementById("output").value += insert;
     }
-    else if(insert == "-"){
+    else if(insert == subtract){
         document.getElementById("output").value += insert;
     }
-    else if(insert == "*"){
+    else if(insert == multiply){
         document.getElementById("output").value += insert;
     }
-    else if(insert == "/"){
+    else if(insert == divide){
         document.getElementById("output").value += insert;
     }
-    else if(insert == "."){
+    else if(insert == decimal){
         document.getElementById("output").value += insert;
     }
 }

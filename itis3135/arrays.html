@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FCC Calculator</title>
+        <link rel="stylesheet" href="styles/default.css">
+    </head>
+    <main>
+        <div data-include="components/header.html"></div>
+        <main class="arrayAlign">
+        <h2>Arrays</h2>
+        <section>
+        <label for="name">Enter Name:</label>
+        <input type="text" id="name">
+        <label for="salary">Enter Salary:</label>
+        <input type="text" id="salary">
+        <button type="submit" onClick="addSalary()">Submit</button>
+        </section>
+        <section>
+            <button onClick="displaySalary()">Show Table</button>
+            <table id="table"></table>
+        </section>
+        <section id="display">
+            <button onclick="displayResults()">Show results</button>
+        </section>
+        <section>
+            <button onClick="employeeDropdown()">Show Employees</button>
+            <select id="employeeDropdown">
+                <option value="">Our Employees</option>
+            </select>
+        </section>
+       
+    </main>
+    <div data-include="components/footer.html"></div> 
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/arrays.js"></script>  
+</html>

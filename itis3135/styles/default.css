@@ -270,3 +270,19 @@ section{
 .emmet > p{
     text-align: center;
 }
+
+#name, #salary{
+    background-color: gainsboro;
+    border-style: none;
+    border-radius: 30px;
+    height: 20px;
+    color:rgb(52, 134, 134);
+    
+}
+
+.arrayAlign{
+    margin: auto;
+    max-width: 400px;
+}
+
+
