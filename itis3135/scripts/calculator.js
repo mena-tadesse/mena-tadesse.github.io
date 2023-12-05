@@ -61,7 +61,7 @@ function show(insert) {
     }
 }
 
-function calculate() {
+function getAnswer() {
     document.getElementById("output").value = eval(output.value);
 }
 
