@@ -3,35 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC Calculator</title>
+    <link rel="stylesheet" href="styles/calculator.css"> 
     <link rel="stylesheet" href="styles/default.css">
-    <title>BYO Intro</title>
 </head>
 <body>
     <div data-include="components/header.html"></div>
     <main>
     <h2>My first attempt at creating a calculator</h2>
+
+<div class="calculator">
     
-    <section class="calculator1">        
-        <button class="buttons" id="1">1</button>
-        <button class="buttons" id="2">2</button>
-        <button class="buttons" id="3">3</button>
-        <button class="buttons" id="+" onClick="add()">+</button>
-        <button class="buttons" id="4">4</button>
-        <button class="buttons" id="5">5</button>
-        <button class="buttons" id="6">6</button>
-        <button class="buttons" id="-" onClick="subtract()">-</button>
-        <button class="buttons" id="7">7</button>
-        <button class="buttons" id="8">8</button>
-        <button class="buttons" id="9">9</button>
-        <button class="buttons" id="*" onClick="multiply()">*</button>
-        <button class="buttons" id="C">C</button>
-        <button class="buttons" id="0">0</button>
-        <button class="buttons" id="=">=</button>
-        <button class="buttons" id="/" onClick="divide()">/</button>
-        
+    <input id="output" placeholder="0" readonly></input>
+    <section class="keys" id="keys">
+        <button class="add" onClick="show('+')">+</button>
+        <button class="subtract" onClick="show('-')">-</button>
+        <button class="multiply" onClick="show('*')">&times;</button>
+        <button class="divide" onClick="show('/')">&divide;</button>
+        <button class="number" onClick="show('1')">1</button>
+        <button class="number" onClick="show('2')">2</button>
+        <button class="number" onClick="show('3')">3</button>
+        <button class="number" onClick="show('4')">4</button>
+        <button class="number" onClick="show('5')">5</button>
+        <button class="number" onClick="show('6')">6</button>
+        <button class="number" onClick="show('7')">7</button>
+        <button class="number" onClick="show('8')">8</button>
+        <button class="number" onClick="show('9')">9</button>
+        <button class="number" onClick="show('0')">0</button>
+        <button class="decimal" onClick="show('.')">.</button>
+        <button class="clear" onClick="cleared()">C</button>
+        <button class="equals" onClick="calculate()">=</button>  
     </section>
-    </main>
-    <div data-include="components/footer.html"></div> 
-    <script src="scripts/HTMLInclude.min.js"></script> 
-    <script src="scripts/survey.js"></script> 
-    </body>
+</div>
+<div data-include="components/footer.html"></div> 
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/calculator.js"></script>  
+</body>
+</html>
