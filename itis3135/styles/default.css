@@ -322,3 +322,10 @@ section{
     text-align: center;
 }
 
+#review1name{
+    text-align: center;
+    margin: auto;
+    font-size:medium;
+    color:rgb(77, 81, 3);
+}
+
