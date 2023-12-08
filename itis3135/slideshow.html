@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow</title>
+    <link rel="stylesheet" href="styles/slideshow.css">
+    <link rel="stylesheet" href="styles/default.css"> 
+    <script src="scripts/slideshow.js"></script>
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+    <main>
+        <h2>My Slideshow</h2>
+        <section class="slideshowContainer">
+            <section class="slides" id="num1">
+                <div class="number">1/11</div>
+                <img src="images/manSlideshow.jpg" alt="Man" style="width: 100%; height: 30%">
+            </section>
+
+            <section class="slides">
+                <div class="number">2/11</div>
+                <img src="images/eraserSlideshow.jpg" alt="Eraser" style="width: 100%; height: 30%">
+            </section>
+
+            <section class="slides">
+                <div class="number">3/11</div>
+                <img src="images/noseSlideshow.png" alt="Nose" style="width: 100%; height: 30%">
+            </section>
+
+            <section class="slides">
+                <div class="number">4/11</div>
+                <img src="images/aisleSlideshow.jpg" alt="Aisle" style="width: 100%; height: 30%">
+            </section>
+
+            <section class="slides">
+                <div class="number">5/11</div>
+                <img src="images/snackSlideshow.jpg" alt="Treat" style="width: 100%; height: 30%">
+            </section>
+
+            <section class="slides">
+                <div class="number">6/11</div>
+                <img src="images/mintmuseum.jpg" alt="Art" style="width: 100%; height: 30%">
+            </section>
+
+            <section class="slides">
+                <div class="number">7/11</div>
+                <img src="images/deskSlideshow.jpg" alt="Desk" style="width: 100%; height: 30%">
+            </section>
+
+            <section class="slides">
+                <div class="number">8/11</div>
+                <img src="images/earbudsSlideshow.jpg" alt="Earbuds" style="width: 100%; height: 30%">
+            </section>
+
+            <section class="slides">
+                <div class="number">9/11</div>
+                <img src="images/sanitizerSlideshow.jpg" alt="Sanitizer" style="width: 100%; height: 30%">
+            </section>
+
+            <section class="slides">
+                <div class="number">10/11</div>
+                <img src="images/starSlideshow.png" alt="Star" style="width: 100%; height: 30%">
+            </section>
+
+            <section class="slides">
+                <div class="number">11/11</div>
+                <img src="images/exitSlideshow.jpg" alt="Exit" style="width: 100%; height: 30%">
+            </section>
+
+            <!--next and prev buttons-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!--image text-->
+            <section class="captionContainer">
+                <p id="caption"></p>
+            </section>
+
+            <!--images at the bottom-->
+            <div class="row">
+                <div class="column">
+                    <img class="demo" src="images/manSlideshow.jpg" alt="The Man: Professor Briesen" style="width:100%" onclick="currentSlide(1)">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="images/eraserSlideshow.jpg" alt="The Eraser: Property of UNCC" style="width:100%" onclick="currentSlide(2)">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="images/noseSlideshow.png" alt="The Nose: An Storytelling Illustration" style="width:100%" onclick="currentSlide(3)">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="images/aisleSlideshow.jpg" alt="The Aisle: An Uncomfortable Seat" style="width:100%" onclick="currentSlide(4)">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="images/snackSlideshow.jpg" alt="The Treat: Delicious" style="width:100%" onclick="currentSlide(5)">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="images/mintmuseum.jpg" alt="The Art: Minty" style="width:100%" onclick="currentSlide(6)">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="images/deskSlideshow.jpg" alt="The Desk: Property of UNCC" style="width:100%" onclick="currentSlide(7)">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="images/earbudsSlideshow.jpg" alt="The Earbuds: My Favorite" style="width:100%" onclick="currentSlide(8)">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="images/sanitizerSlideshow.jpg" alt="The Sanitizer: Just Wash Your Hands People!" style="width:100%" onclick="currentSlide(9)">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="images/starSlideshow.png" alt="The Star: Stunning" style="width:100%" onclick="currentSlide(10)">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="images/exitSlideshow.jpg" alt="The Exit: A Red Sign" style="width:100%" onclick="currentSlide(11)">
+                </div>
+            </div>
+        </section>
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
