@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FCC Calculator</title>
+    <title>Calculator Try</title>
     <link rel="stylesheet" href="styles/calculator.css"> 
     <link rel="stylesheet" href="styles/default.css">
 </head>
@@ -31,10 +31,11 @@
         <button class="number" onClick="show('9')">9</button>
         <button class="number" onClick="show('0')">0</button>
         <button class="decimal" onClick="show('.')">.</button>
-        <button class="clear" onClick="cleared()">C</button>
-        <button class="equals" onClick="getAnswer()">=</button>  
+        <button class="cleared" onClick="cleared()">C</button>
+        <button class="equals" onClick="getAnswer()" id="equal">=</button>  
     </section>
 </div>
+</main>
 <div data-include="components/footer.html"></div> 
     <script src="scripts/HTMLInclude.min.js"></script>
     <script src="scripts/calculator.js"></script>  

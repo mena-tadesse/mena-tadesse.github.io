@@ -62,7 +62,7 @@ function show(insert) {
     }
 }
 
-
+/* IDK how to calculate it with js :( */
 
 function cleared(){
     document.getElementById("output").value = "";

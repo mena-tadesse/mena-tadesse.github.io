@@ -8,15 +8,11 @@
 
 .keys{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin: auto;
-    row-gap: 4px;
-    column-gap: 4px;
+    margin: auto; 
+    grid: 40px / auto auto auto auto;
+    row-gap: 10px;
 }
 
-.equals{
-    grid-column: 1 / span 4;
-}
 
 #output{
     display: grid;
@@ -35,6 +31,7 @@ button{
     border-style: none;
     border-radius: 20px;
     height: 40px;
+    width: 80px;
 }
 
 button:hover{
@@ -44,6 +41,7 @@ button:hover{
 button:active{
     background-color:rgb(235, 222, 146)
 }
+
 
 
 
