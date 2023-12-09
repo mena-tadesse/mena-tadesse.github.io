@@ -255,7 +255,7 @@ input[type=text], input[type=tel], input[type=email], input[type=date], input[ty
 
 
 
-button{
+#submitApp{
     color: black;
     padding: 10px;
     font-size: small;
@@ -270,11 +270,43 @@ button{
 #popup{
     position: absolute;
     width: 300px;
-    height: 300px;
-    background-color:rgb(228, 229, 229);
+    height: 260px;
+    background-color:white;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -10%);
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.appLogo{
+    margin-right: 12px;
+    margin-top: 10px;
+    max-width: 70px;
+}
+
+#thanks{
+    font-size:medium;
+    font-weight:550;
+}
+
+.popupText{
+    width: 280px;
+    margin: auto;
+    padding: 5px;
+    font-size: smaller;
+}
+
+#closeButton{
+    background-color:rgb(167, 213, 239);
+    padding: 10px;
+    border-radius: 30px;
+    border-style: none;
+    margin-top: 20px;
+    font-size: small;
+    font-weight: 550;
 }
 
 /*

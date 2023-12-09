@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,17 +18,17 @@
             <a href="app.html">Appointments</a>
             <a href="review.html">Reviews</a>
         </nav>
-        <div >
+        
             <img id="appbackground" src="images/appbackground.jpg">
             <section class="appointments" id="appointmentSection">
                 <h1 class="headings">Make An Appointment</h1>
-                <form>
+                <form onSubmit="popUp(); return false;">
                     <label class="forms">First Name: <input class="text" type="text" placeholder="Ex: John" required></label>
                     <label class="forms">Last Name: <input class="text" type="text" placeholder="Ex: Smith" required></label>
                     <label class="forms">Email: <input class="email" type="email" placeholder="Ex: example@email.com" required></label>
                     <label class="forms">Phone: <input class="phone" type="tel" required></label>
                     <label class="forms">Service Choice:</label>
-                    <select>
+                    <select required>
                         <option value="">(select)</option>
                         <option value="1">Auto A/C and Heat Repair</option>
                         <option value="2">Brake Repair</option>
@@ -42,16 +43,17 @@
                     <label class="forms">Date: <input type="date" required></label>
                     <label class="forms">Time <input type="time" required></label>
                     <label class="forms">Additional Information: <input type="text" placeholder="Comments, questions, concerns..."></label>
-                    <button type="submit" onClick="popUp()">Submit</button>
+                    <input type="submit" value="Submit" id="submitApp">
                 </form>
             </section>
-            <div id="popup" class="appointments">
-                <p id="thanks">Thank you!</p>
-                <p>We have recorded your appointment to our schedule.</p>
-                <p>We will reach out if there is any other information needed.</p>
-                <p>See you soon!</p>
-            </div>
-        </div>
+            <section id="popup" class="appointments">
+                <img src="images/teddy_auto_shop.png" class="appLogo">
+                <p id="thanks">Thank you for choosing Teddy's Auto Shop!</p>
+                <p class="popupText">We have recorded your appointment to our schedule, and will reach out if there is any other information we need from you.</p>
+                <p class="popupText" id="seeYa">See you soon!</p>
+                <input type="button" value="Close" id="closeButton" onClick="closePopUp()">
+            </section>
+        
         <div class="homeFooter">
             <div id="footer1">
                 <p><strong>Contact us</strong></p>
