@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Appointments</title>
     <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/app.js"></script>
 
 </head>
 <body>
@@ -43,23 +44,13 @@
                     <label class="forms">Additional Information: <input type="text" placeholder="Comments, questions, concerns..."></label>
                     <button type="submit" onClick="popUp()">Submit</button>
                 </form>
-                <div id="popup">
-                    <p id="thanks">Thank you!</p>
-                    <p>We have recorded your appointment to our schedule.</p>
-                    <p>We will reach out if there is any other information needed.</p>
-                    <p>See you soon!</p>
-                </div>
-
-                <script>
-                    let popup = document.getElementById("popup");
-                    /*let appointmentArea = document.getElementById("appointmentSection"); */
-                    function popUp(){
-                    popup.classList.add("open-popup");
-                    /*appointmentArea.add("closeAppointmentSection"); */
-                    }
-                    popUp();
-                </script>
             </section>
+            <div id="popup" class="appointments">
+                <p id="thanks">Thank you!</p>
+                <p>We have recorded your appointment to our schedule.</p>
+                <p>We will reach out if there is any other information needed.</p>
+                <p>See you soon!</p>
+            </div>
         </div>
         <div class="homeFooter">
             <div id="footer1">

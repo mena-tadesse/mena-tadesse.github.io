@@ -19,48 +19,6 @@
     
 
 }
-#logo{
-    width: 50px;
-}
-
-.slogan{
-    width: 100%;
-    margin: 0;
-    position: relative;
-}
-
-#sloganImage{
-    width: 100%;
-    margin-bottom: -4px;
-    object-fit: cover;
-    overflow: hidden;
-
-}
-
-#sloganText{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#sloganText > p{
-    color: white; 
-    text-align: center;
-}
-
-#slogan1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight:bolder;
-    font-size: 50px;
-}
-
-#slogan2{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 25px;
-    font-weight: lighter;
-}
-
 body{
     background-color: rgb(29, 101, 164);
     margin: 0;
@@ -107,6 +65,51 @@ body{
     font-weight: lighter;
 }
 
+/*HOME*/
+#logo{
+    width: 50px;
+}
+
+.slogan{
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+
+#sloganImage{
+    width: 100%;
+    margin-bottom: -4px;
+    object-fit: cover;
+    overflow: hidden;
+
+}
+
+#sloganText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#sloganText > p{
+    color: white; 
+    text-align: center;
+}
+
+#slogan1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bolder;
+    font-size: 50px;
+}
+
+#slogan2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+
+
 @media ( max-width: 576px){
     #slogan1{
         font-size: 20px;
@@ -120,6 +123,8 @@ body{
         font-size: 10px;
     }
 }
+
+/*ABOUT US*/
 
 .aboutUsBackground{
     background-image: url(nails.jpg);
@@ -209,6 +214,7 @@ body{
     text-align: center;
 }
 
+/*APPOINTMENTS*/
 #appbackground{
     object-fit: cover;
     width: 100%;
@@ -222,6 +228,11 @@ body{
     max-width: 500px;
     min-width: 350px;
     padding: 10px;
+    display: none;
+}
+
+#appointmentSection{
+    display: block;
 }
 
 .forms, button{
@@ -257,7 +268,6 @@ button{
 
 
 #popup{
-    visibility: hidden;
     position: absolute;
     width: 300px;
     height: 300px;
@@ -265,17 +275,18 @@ button{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-
 }
 
+/*
 .open-popup{
     visibility: visible;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+*/
 
+/*REVIEWS*/
 .review{
     position: absolute;
     top: 50%;

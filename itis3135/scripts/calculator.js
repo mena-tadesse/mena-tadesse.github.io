@@ -46,26 +46,24 @@ function show(insert) {
         document.getElementById("output").value += nine;
     }
     else if(insert == add){
-        document.getElementById("output").value += insert;
+        document.getElementById("output").value += add;
     }
     else if(insert == subtract){
-        document.getElementById("output").value += insert;
+        document.getElementById("output").value += subtract;
     }
     else if(insert == multiply){
-        document.getElementById("output").value += insert;
+        document.getElementById("output").value += multiply;
     }
     else if(insert == divide){
-        document.getElementById("output").value += insert;
+        document.getElementById("output").value += divide;
     }
     else if(insert == decimal){
-        document.getElementById("output").value += insert;
+        document.getElementById("output").value += decimal;
     }
 }
 
-function getAnswer() {
-    document.getElementById("output").value = eval(output.value);
-}
 
-function cleared() {
+
+function cleared(){
     document.getElementById("output").value = "";
 }
