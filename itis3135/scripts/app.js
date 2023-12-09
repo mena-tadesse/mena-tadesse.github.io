@@ -7,3 +7,7 @@ function closePopUp(){
     document.getElementById("popup").style.display = "none";
     document.getElementById("appointmentSection").style.display = "block";
 }
+
+function clearForm() {
+    document.getElementById('appointmentForm').reset();
+}

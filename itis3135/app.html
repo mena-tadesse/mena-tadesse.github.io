@@ -22,7 +22,7 @@
             <img id="appbackground" src="images/appbackground.jpg">
             <section class="appointments" id="appointmentSection">
                 <h1 class="headings">Make An Appointment</h1>
-                <form onSubmit="popUp(); return false;">
+                <form onSubmit="popUp(); return false;" id="appointmentForm">
                     <label class="forms">First Name: <input class="text" type="text" placeholder="Ex: John" required></label>
                     <label class="forms">Last Name: <input class="text" type="text" placeholder="Ex: Smith" required></label>
                     <label class="forms">Email: <input class="email" type="email" placeholder="Ex: example@email.com" required></label>
@@ -51,7 +51,7 @@
                 <p id="thanks">Thank you for choosing Teddy's Auto Shop!</p>
                 <p class="popupText">We have recorded your appointment to our schedule, and will reach out if there is any other information we need from you.</p>
                 <p class="popupText" id="seeYa">See you soon!</p>
-                <input type="button" value="Close" id="closeButton" onClick="closePopUp()">
+                <input type="submit" value="Close" id="closeButton" onClick="closePopUp(); clearForm()" >
             </section>
         
         <div class="homeFooter">
