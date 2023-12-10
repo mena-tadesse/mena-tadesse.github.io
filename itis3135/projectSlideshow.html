@@ -9,14 +9,7 @@
 </head>
 <body id="ourTeamBody">
     <main>
-        <nav class="projNav">
-            <a href="home.html"><img src="images/teddy_auto_shop.png" id="logo"></a>
-            <a href="us.html">Mission</a>
-            <a href="projectSlideshow.html">Our Team</a>
-            <a href="services.html">Services</a>
-            <a href="app.html">Appointments</a>
-            <a href="review.html">Reviews</a>
-        </nav>
+        <div data-include="components/projectHeader.html"></div>
         <img src="images/tires.jpg" id="ourTeamImg">
         <section class="teamSlidesContainer">
             <h1 id="ourTeamHeader">Meet Our Staff</h1>
@@ -61,15 +54,6 @@
     </main>
     
 </body>
-<footer class="homeFooter" id="ourTeamFooter">
-    <div id="footer1">
-        <p><strong>Contact us</strong></p>
-        <p>Email: madeupemail@gmail.com</p>
-        <p>Phone: (123) 456-789 </p>
-    </div>
-    <div id="footer2">
-        <p><strong>Location</strong></p>
-        <p>1234 Fake St Charlotte, NC 28105</p>
-    </div>
-</footer>
+<div data-include="components/projectFooter.html"></div>
+<script src="scripts/HTMLInclude.min.js"></script> 
 </html>

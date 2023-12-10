@@ -29,7 +29,6 @@ body{
 .homeFooter{
     display: flex;
     flex-direction: row;
-    background-color: rgb(29, 101, 164);
 }
 
 #footer1{
@@ -63,6 +62,15 @@ body{
     color: rgb(167, 213, 239);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: lighter;
+}
+
+.htmlcss{
+    width: 7%;
+    margin-top: -10px;
+    padding-bottom: 10px;
+    margin: auto;
+    text-decoration: none;
+    border-style: none;
 }
 
 /*HOME*/
@@ -178,7 +186,7 @@ body{
 }
 
 
-
+/*Services*/
 .servicesContainer{
     display: flex;
     flex-wrap: wrap;
@@ -198,16 +206,20 @@ body{
 .services{
     width: 200px;
     height: 200px;
-    background-color: rgb(240, 238, 238);
     align-items: center;
     margin: 7px;
     border-radius: 7px;
-    padding-left: 5px;
-    padding-right: 5px;
+
+    background-color: aliceblue;
+}
+
+.services > img{
+    width: 100%;
+    border-radius: 7px;
 }
 
 .services > p{
-    color:rgb(18, 66, 108);
+    color:rgb(231, 231, 231);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: x-large;
     font-weight:500;
