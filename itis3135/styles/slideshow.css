@@ -52,7 +52,6 @@
     margin-bottom: 10px;
 }
 
-/*erase to see what it does*/
 .row:after {
     content: "";
     display: table;

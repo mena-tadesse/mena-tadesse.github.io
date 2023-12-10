@@ -5,28 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reviews</title>
     <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/app.js"></script>
 </head>
 <body>
     <main>
         <nav class="projNav">
             <a href="home.html"><img src="images/teddy_auto_shop.png" id="logo"></a>
-            <a href="us.html">About Us</a>
+            <a href="us.html">Mission</a>
+            <a href="projectSlideshow.html">Our Team</a>
             <a href="services.html">Services</a>
             <a href="app.html">Appointments</a>
             <a href="review.html">Reviews</a>
         </nav>
 
-        <div>
+        <div id="reviewsWillGoHere">
+            <h1 id="reviewsHeading">Reviews</h1>
+            <section class="personReview">
+                <p>They got my car up and running in no time! ~ Sarah Wilson </p>
+            </section>
+            <section class="personReview">
+                <p>The folks at the auto repair service were quick to fix my car troubles, 
+                    showing a great deal of skill and providing friendly service throughout 
+                    the entire process. ~ Bob Jones 
+                </p>
+            </section>
+            <section class="personReview">
+                <p>I love their affordable prices and kind staff. ~ Milo Davis</p>
+            </section>
+        </div>
+
+        <div id="reviewDiv">
             <img src="images/reviews.jpg" id="reviewImage">
             <section class="review">
                 <h1>Write A Review</h1>
                 <p>Your input matters to us, so please share your feedback 
                    to help us improve and enhance our services! </p>
+                <div id="userReview2">
                 <label for="name">Full Name: </label>
                 <input type="text" id="name" placeholder="Ex: John Smith" required>
                 <label for="name">Review: </label>
-                <input type="text" id="name" placeholder="Please write the review here..." required>
-                <button type="submit">Submit</button>
+                <input type="text" id="userReview" placeholder="Please write the review here..." required>
+                <button type="submit" onClick="addReview(); clearReview()">Submit</button>
+            </div>
             </section>
         </div>
 
