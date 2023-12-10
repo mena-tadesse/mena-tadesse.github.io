@@ -10,8 +10,8 @@
 
 </head>
 <body>
+    <div data-include="components/project_header.html"></div>
     <main>
-        <div data-include="components/projectHeader.html"></div>
         <h2 class="headings">Make An Appointment</h2>
             <img id="appbackground" src="images/appbackground.jpg">
             <section class="appointments" id="appointmentSection">
@@ -46,12 +46,9 @@
                 <p class="popupText">We have recorded your appointment to our schedule, and will reach out if there is any other information we need from you.</p>
                 <p class="popupText" id="seeYa">See you soon!</p>
                 <input type="submit" value="Close" id="closeButton" onClick="closePopUp(); clearForm()" >
-            </section>
-        
-            <div data-include="components/projectFooter.html"></div>
-            <script src="scripts/HTMLInclude.min.js"></script> 
-    
+            </section> 
     </main>
-    
+    <div data-include="components/project_footer.html"></div>
+    <script src="scripts/HTMLInclude.min.js"></script>
 </body>
 </html>
