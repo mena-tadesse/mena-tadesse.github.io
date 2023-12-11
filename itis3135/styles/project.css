@@ -32,14 +32,9 @@ body{
 }
 
 #footer1{
-    width: 50%;
+    width: 25%;
     height: 100px;
     margin: 0;
-    border: 0.3px solid rgb(50, 132, 183);
-    border-bottom: none;
-    border-top: none;
-    border-left: none;
-    padding-bottom: 50px
 }
 
 #footer1 > p{
@@ -47,10 +42,11 @@ body{
     color: rgb(167, 213, 239);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: lighter;
+    margin-bottom: -10px;
 }
 
 #footer2{
-    width: 50%;
+    width: 25%;
     margin: 0;
     border-bottom: none;
     border-top: none;
@@ -58,10 +54,11 @@ body{
 }
 
 #footer2 > p{
-    margin-left: 40px;
+    margin-left: 10px;
     color: rgb(167, 213, 239);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: lighter;
+    margin-bottom: 10px;
 }
 
 .htmlcss{
@@ -71,6 +68,19 @@ body{
     margin: auto;
     text-decoration: none;
     border-style: none;
+}
+
+#htmlcssDiv{
+    margin-left: 10px;
+}
+
+#footerSlogan > p{
+    margin-left: 175px;
+    padding-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:xx-large;
+    font-weight:bold;
+    color:rgb(204, 227, 241)
 }
 
 /*HOME*/
@@ -314,7 +324,7 @@ input[type=text], input[type=tel], input[type=email], input[type=date], input[ty
     width: 300px;
     height: 260px;
     background-color:white;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -10%);
     padding: 20px;
@@ -350,15 +360,6 @@ input[type=text], input[type=tel], input[type=email], input[type=date], input[ty
     font-size: small;
     font-weight: 550;
 }
-
-/*
-.open-popup{
-    visibility: visible;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-*/
 
 /*REVIEWS*/
 .review{
@@ -428,6 +429,16 @@ input[type=text], input[type=tel], input[type=email], input[type=date], input[ty
 
 #reviewsHeading{
     text-align: center;
+}
+
+#submitReviewButton{
+    color: black;
+    padding: 10px;
+    font-size: small;
+    border-radius: 20px;
+    border: none;
+    margin-top: 10px;
+    background-color:rgb(216, 241, 255); 
 }
 
 /*Our Team*/
