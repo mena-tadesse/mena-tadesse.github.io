@@ -58,7 +58,7 @@ body{
     color: rgb(167, 213, 239);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: lighter;
-    margin-bottom: 10px;
+    margin-bottom: -10px;
 }
 
 .htmlcss{
@@ -72,15 +72,17 @@ body{
 
 #htmlcssDiv{
     margin-left: 10px;
+    margin-top: 20px;
 }
 
 #footerSlogan > p{
     margin-left: 175px;
-    padding-top: 10px;
+    padding-top: 5px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size:xx-large;
     font-weight:bold;
     color:rgb(204, 227, 241)
+    
 }
 
 /*HOME*/
@@ -427,7 +429,7 @@ input[type=text], input[type=tel], input[type=email], input[type=date], input[ty
     overflow: auto;
 }
 
-#reviewsHeading{
+.reviewsHeading{
     text-align: center;
 }
 
@@ -504,7 +506,7 @@ input[type=text], input[type=tel], input[type=email], input[type=date], input[ty
     font-size: 20px;
     border-radius: 0 3px 3px 0;
     user-select: none;
-    -webkit-user-select: none;
+    
 }
 
 .next {
