@@ -75,9 +75,9 @@ body{
     margin-top: 20px;
 }
 
-#footerSlogan > p{
-    margin-left: 175px;
-    padding-top: 5px;
+#footerSlogan > h1{
+    margin-left: 275px;
+    padding-top: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size:xx-large;
     font-weight:bold;
